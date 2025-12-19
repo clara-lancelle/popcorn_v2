@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import {
   Footer,
   FooterCopyright,
@@ -15,6 +14,7 @@ export default function AppFooter() {
         year={new Date().getFullYear()}
       />
       <FooterLinkGroup>
+        <FooterLink href="/about">About</FooterLink>
         <FooterLink href="/legal-notice">Legal Notice</FooterLink>
         <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
         <FooterLink href="/cookies-policy">Cookies Policy</FooterLink>

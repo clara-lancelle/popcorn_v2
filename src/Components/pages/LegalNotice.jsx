@@ -8,7 +8,7 @@ export default function LegalNotice() {
         <p>
           Website name: <strong>Popcorn</strong>
           <br />
-          Publisher: <strong>Private individual</strong>
+          Publisher: <strong>Lancelle CLara</strong>
           <br />
           Contact email: <strong>contact@lncl.com</strong>
         </p>

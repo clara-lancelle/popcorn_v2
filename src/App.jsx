@@ -11,6 +11,7 @@ import LegalNotice from "./Components/pages/LegalNotice";
 import PrivacyPolicy from "./Components/pages/PrivacyPolicy";
 import CookiesPolicy from "./Components/pages/CookiesPolicy";
 import AppFooter from "./Components/layouts/AppFooter";
+import About from "./Components/pages/About";
 
 function App() {
   const [genre, setGenre] = useState({});
@@ -36,6 +37,7 @@ function App() {
           <Route path="/legal-notice" element={<LegalNotice />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/cookies-policy" element={<CookiesPolicy />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <HandleAsideGenres setGenre={setGenre} />
       </div>
