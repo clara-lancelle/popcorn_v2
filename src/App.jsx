@@ -1,30 +1,46 @@
-import { useState } from 'react';
-import './App.css';
-import { Route, Routes } from "react-router-dom";
-import HandleFavoritePage from './Components/HandleFavoritePage';
-import AppNavbar from './Components/layouts/Navbar';
-import HandleAsideGenres from './Components/HandleAsideGenres';
-import HandleMovieDetails from './Components/HandleMovieDetails';
-import HandleRatedPage from './Components/HandleRatedPage';
-import HandleMovieGallery from './Components/HandleMovieGallery';
+import { useState } from "react";
+import "./App.css";
+import { Route, Routes, Link } from "react-router-dom";
+import HandleFavoritePage from "./Components/HandleFavoritePage";
+import AppNavbar from "./Components/layouts/AppNavbar";
+import HandleAsideGenres from "./Components/HandleAsideGenres";
+import HandleMovieDetails from "./Components/HandleMovieDetails";
+import HandleRatedPage from "./Components/HandleRatedPage";
+import HandleMovieGallery from "./Components/HandleMovieGallery";
+import LegalNotice from "./Components/pages/LegalNotice";
+import PrivacyPolicy from "./Components/pages/PrivacyPolicy";
+import CookiesPolicy from "./Components/pages/CookiesPolicy";
+import AppFooter from "./Components/layouts/AppFooter";
 
 function App() {
-  const [genre, setGenre] = useState({})
-  const [currentMovie, setCurrentMovie] = useState({})
+  const [genre, setGenre] = useState({});
+  const [currentMovie, setCurrentMovie] = useState({});
   return (
-    <div className='min-h-full'>
+    <div className="min-h-screen flex flex-col">
       <AppNavbar />
-      <Routes>
-        <Route path="/" element={<HandleMovieGallery genre={genre} setCurrentMovie={setCurrentMovie} currentMovie={currentMovie} />} />
-        <Route path="/fav" element={<HandleFavoritePage />} />
-        <Route path="/rated" element={<HandleRatedPage />} />
-        <Route path="/details" element={<HandleMovieDetails />} />
-      </Routes>
-      <HandleAsideGenres setGenre={setGenre} />
-      <footer className="border-gray-200 bg-gray-100 justify-center w-full mt-5 flex items-center mx-auto p-4">
-        <p> &copy; Lancelle Clara </p>
-      </footer>
-    </div >
+      <div className="flex-1 content-center">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <HandleMovieGallery
+                genre={genre}
+                setCurrentMovie={setCurrentMovie}
+                currentMovie={currentMovie}
+              />
+            }
+          />
+          <Route path="/fav" element={<HandleFavoritePage />} />
+          <Route path="/rated" element={<HandleRatedPage />} />
+          <Route path="/details" element={<HandleMovieDetails />} />
+          <Route path="/legal-notice" element={<LegalNotice />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/cookies-policy" element={<CookiesPolicy />} />
+        </Routes>
+        <HandleAsideGenres setGenre={setGenre} />
+      </div>
+      <AppFooter />
+    </div>
   );
 }
 

@@ -8,7 +8,7 @@ import {
 } from "flowbite-react";
 import { Link, NavLink } from "react-router-dom";
 
-function AppNavbar() {
+export default function AppNavbar() {
   const [search, setSearch] = useDebounce(1000);
 
   return (
@@ -72,5 +72,3 @@ function AppNavbar() {
     </Navbar>
   );
 }
-
-export default AppNavbar;
