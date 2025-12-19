@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './App.css';
 import { Route, Routes } from "react-router-dom";
 import HandleFavoritePage from './Components/HandleFavoritePage';
-import Navbar from './Components/layouts/Navbar';
+import AppNavbar from './Components/layouts/Navbar';
 import HandleAsideGenres from './Components/HandleAsideGenres';
 import HandleMovieDetails from './Components/HandleMovieDetails';
 import HandleRatedPage from './Components/HandleRatedPage';
@@ -13,7 +13,7 @@ function App() {
   const [currentMovie, setCurrentMovie] = useState({})
   return (
     <div className='min-h-full'>
-      <Navbar />
+      <AppNavbar />
       <Routes>
         <Route path="/" element={<HandleMovieGallery genre={genre} setCurrentMovie={setCurrentMovie} currentMovie={currentMovie} />} />
         <Route path="/fav" element={<HandleFavoritePage />} />

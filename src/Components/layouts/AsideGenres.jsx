@@ -9,7 +9,7 @@ function AsideGenres({ setGenre, genreList }) {
     return (
         <>
             <div className="text-center">
-                <Button className="absolute top-44 md:top-20 left-5 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 0 focus:outline-none"  onClick={() => setIsOpen(true)}>
+                <Button className="absolute top-40 md:top-20 md:left-5 md:right-auto right-3  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 0 focus:outline-none"  onClick={() => setIsOpen(true)}>
                     Show Categories
                 </Button>
             </div>

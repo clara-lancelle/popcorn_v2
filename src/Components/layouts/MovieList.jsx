@@ -6,7 +6,7 @@ function MovieList({ list, setResults }) {
             {list?.map(({ id, name = null, known_for_department = null, media_type, profile_path = null, known_for = [], title = null, original_title = null, overview = null, release_date = null, backdrop_path = null, ...rest }) => (
                 <div key={id} className="flex w-full px-4 py-3 hover:bg-gray-100 flex-col md:flex-row">
                     <div className="flex-shrink-0">
-                        <img className="object-contain h-20 sm:h" src={`https://image.tmdb.org/t/p/w200/${backdrop_path || profile_path}`} alt="movie poster" />
+                        <img className="object-contain h-20 sm:h sm:ps-0 ps-3" src={`https://image.tmdb.org/t/p/w200/${backdrop_path || profile_path}`} alt="movie poster" />
                     </div>
                     <div className="w-[70%] ps-3">
                         <p className="text-sm mb-1.5 font-semibold text-gray-900">{title || name}</p>
