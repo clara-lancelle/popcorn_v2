@@ -27,7 +27,12 @@ export default function PrivacyPolicy() {
 
       <section>
         <h2 className="text-xl font-semibold">Data sharing</h2>
-        <p>No personal data is sold, shared or transferred to third parties.</p>
+        <p>No personal data is sold.</p>
+        <p>
+          Certain anonymous usage data may be shared with third-party service
+          providers, such as Google LLC, for analytics purposes, and only after
+          explicit user consent.
+        </p>
       </section>
 
       <section>
@@ -39,6 +44,20 @@ export default function PrivacyPolicy() {
         <p>
           Contact: <strong>contact@lncl.com</strong>
         </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold">Analytics</h2>
+        <p>
+          This website uses Google Analytics 4, a web analytics service provided
+          by Google LLC, to analyze website usage and improve user experience.
+        </p>
+        <p>
+          Google Analytics collects anonymous information such as page views,
+          device type, and approximate geographic location.
+        </p>
+        <p>Analytics data is collected only after explicit user consent.</p>
+        <p>You can opt out at any time by refusing analytics cookies.</p>
       </section>
     </main>
   );

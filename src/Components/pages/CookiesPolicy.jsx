@@ -19,9 +19,17 @@ export default function CookiesPolicy() {
       <section>
         <h2 className="text-xl font-semibold">Analytics cookies</h2>
         <p>
-          No analytics or tracking cookies are currently used. If analytics
-          tools are added in the future, this policy will be updated and user
-          consent will be requested where required.
+          With your consent, this website uses Google Analytics cookies to
+          measure traffic and usage statistics.
+        </p>
+        <ul className="list-disc pl-6">
+          <li>Page views</li>
+          <li>Navigation behavior</li>
+          <li>Device and browser information</li>
+        </ul>
+        <p>
+          These cookies are set only after you explicitly accept analytics
+          cookies.
         </p>
       </section>
 

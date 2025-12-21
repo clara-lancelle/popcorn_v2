@@ -11,9 +11,11 @@ import PrivacyPolicy from "./Components/pages/PrivacyPolicy";
 import CookiesPolicy from "./Components/pages/CookiesPolicy";
 import AppFooter from "./Components/layouts/AppFooter";
 import About from "./Components/pages/About";
+import CookieBanner from "./Components/Analytics/CookieBanner";
 
 function App() {
   const [currentMovie, setCurrentMovie] = useState({});
+  const [showCookies, setShowCookies] = useState(false);
   return (
     <div className="min-h-screen flex flex-col">
       <AppNavbar />
@@ -37,7 +39,8 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
-      <AppFooter />
+      <CookieBanner forceOpen={showCookies} />
+      <AppFooter onCookiesClick={() => setShowCookies(true)} />
     </div>
   );
 }
