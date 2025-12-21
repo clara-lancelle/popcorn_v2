@@ -1,10 +1,12 @@
 import React, { useCallback, useState } from "react";
 import { Link } from "react-router-dom";
+import HandleAsideGenres from "../HandleAsideGenres";
 
-function MovieGallery({ movies, genre }) {
+function MovieGallery({ movies, genre, setGenre }) {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
+      <HandleAsideGenres setGenre={setGenre} />
       <h1 className="my-5 text-4xl font-extrabold leading-none tracking-tight text-gray-900 underline underline-offset-3 decoration-8 decoration-red-400 text-center py-5">
         {genre.name ? genre.name : "Trending movies"}
       </h1>

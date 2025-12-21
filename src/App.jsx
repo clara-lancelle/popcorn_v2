@@ -3,7 +3,6 @@ import "./App.css";
 import { Route, Routes, Link } from "react-router-dom";
 import HandleFavoritePage from "./Components/HandleFavoritePage";
 import AppNavbar from "./Components/layouts/AppNavbar";
-import HandleAsideGenres from "./Components/HandleAsideGenres";
 import HandleMovieDetails from "./Components/HandleMovieDetails";
 import HandleRatedPage from "./Components/HandleRatedPage";
 import HandleMovieGallery from "./Components/HandleMovieGallery";
@@ -14,7 +13,6 @@ import AppFooter from "./Components/layouts/AppFooter";
 import About from "./Components/pages/About";
 
 function App() {
-  const [genre, setGenre] = useState({});
   const [currentMovie, setCurrentMovie] = useState({});
   return (
     <div className="min-h-screen flex flex-col">
@@ -25,7 +23,6 @@ function App() {
             path="/"
             element={
               <HandleMovieGallery
-                genre={genre}
                 setCurrentMovie={setCurrentMovie}
                 currentMovie={currentMovie}
               />
@@ -39,7 +36,6 @@ function App() {
           <Route path="/cookies-policy" element={<CookiesPolicy />} />
           <Route path="/about" element={<About />} />
         </Routes>
-        <HandleAsideGenres setGenre={setGenre} />
       </div>
       <AppFooter />
     </div>
