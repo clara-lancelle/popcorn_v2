@@ -3,7 +3,7 @@
   "name": "All about movies with TMDB API",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "/images/popcorn.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
