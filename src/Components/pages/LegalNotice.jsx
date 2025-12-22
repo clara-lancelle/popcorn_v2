@@ -10,7 +10,7 @@ export default function LegalNotice() {
                     <br />
                     Publisher: <strong>Lancelle CLara</strong>
                     <br />
-                    Contact email: <strong>contact@lncl.com</strong>
+                    Contact email: <strong>contact.popcorn@lncl.com</strong>
                 </p>
                 <p className="text-sm text-gray-600 mt-2">
                     In accordance with applicable law, the publisher has chosen

@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
                     may request access to or deletion of their data.
                 </p>
                 <p>
-                    Contact: <strong>contact@lncl.com</strong>
+                    Contact: <strong>contact.popcorn@lncl.com</strong>
                 </p>
             </section>
 
