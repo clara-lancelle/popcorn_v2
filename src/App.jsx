@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import HandleFavoritePage from "./Components/HandleFavoritePage";
 import AppNavbar from "./Components/layouts/AppNavbar";
 import HandleMovieDetails from "./Components/HandleMovieDetails";

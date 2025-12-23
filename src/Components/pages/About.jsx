@@ -1,5 +1,5 @@
 import { List, ListItem } from "flowbite-react";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsEnvelope, BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaReact } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -24,18 +24,14 @@ export default function About() {
             </section>
             <section>
                 <List>
+                    <h3 className="underline py-2">Projects</h3>
                     <Link
                         to={`https://github.com/clara-lancelle`}
                         target="_blank"
                     >
                         <ListItem icon={BsGithub}>My Github</ListItem>
                     </Link>
-                    <Link
-                        to={`https://www.linkedin.com/in/clara-lancelle-159634238/`}
-                        target="_blank"
-                    >
-                        <ListItem icon={BsLinkedin}>My Linkedin</ListItem>
-                    </Link>
+
                     <Link
                         to={`https://password-generator.lncl.fr/`}
                         target="_blank"
@@ -43,6 +39,20 @@ export default function About() {
                         <ListItem icon={FaReact}>
                             My Password generator website 🔑
                         </ListItem>
+                    </Link>
+                </List>
+            </section>
+            <section>
+                <List>
+                    <h3 className="underline py-2">Contact</h3>
+                    <Link
+                        to={`https://www.linkedin.com/in/clara-lancelle-159634238/`}
+                        target="_blank"
+                    >
+                        <ListItem icon={BsLinkedin}>Linkedin</ListItem>
+                    </Link>
+                    <Link to={"mailto:contact.popcorn@lncl.fr"}>
+                        <ListItem icon={BsEnvelope}>Email address</ListItem>
                     </Link>
                 </List>
             </section>
