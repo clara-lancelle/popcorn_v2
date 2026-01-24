@@ -14,7 +14,9 @@ export default function About() {
                     src="/images/Lancelle_clara.jpg"
                     className="mb-5 rounded-full shadow-lg h-44 justify-self-center md:justify-self-auto"
                 />
-                <h2 className="text-xl font-semibold">Hi, my name is Clara</h2>
+                <h2 className="text-xl font-semibold">
+                    Hi, my name is <span>Clara Lancelle</span>
+                </h2>
                 <p> I'm a web developer who lives in France, Nantes (44000).</p>
                 <p className="text-sm text-gray-600 mt-2">
                     This website is part of my portfolio, to see more of it
