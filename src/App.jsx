@@ -11,6 +11,7 @@ import PrivacyPolicy from "./Components/pages/PrivacyPolicy";
 import AppFooter from "./Components/layouts/AppFooter";
 import About from "./Components/pages/About";
 import NotFound from "./Components/pages/NotFound";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
     const [currentMovie, setCurrentMovie] = useState({});
@@ -39,6 +40,7 @@ function App() {
                 </Routes>
             </div>
             <AppFooter />
+            <Analytics />
         </div>
     );
 }
