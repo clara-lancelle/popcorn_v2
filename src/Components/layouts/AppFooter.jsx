@@ -13,7 +13,7 @@ export default function AppFooter() {
             <div className="w-full">
                 <div className="mx-auto w-full max-w-screen-xl p-4 py-1">
                     <div className="md:flex md:justify-between">
-                        <div className="mb-6 md:mb-0 flex flex-row align-middle gap-2">
+                        <div className="mb-6 md:mb-0 flex flex-row items-center gap-2">
                             <img
                                 src="/images/popcorn.png"
                                 alt="Popcorn icon"
