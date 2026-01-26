@@ -12,8 +12,13 @@ export default function AppNavbar() {
                 to="/"
                 className="flex items-center space-x-3 rtl:space-x-reverse"
             >
+                <img
+                    src="/images/popcorn.png"
+                    alt="Popcorn icon"
+                    width="35px"
+                />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap ">
-                    🍿 PopCorn
+                    PopCorn
                 </span>
             </Link>
             <NavbarToggle />

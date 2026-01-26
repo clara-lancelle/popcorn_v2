@@ -45,26 +45,6 @@ export default function PrivacyPolicy() {
                     Contact: <strong>contact.popcorn@lncl.fr</strong>
                 </p>
             </section>
-
-            <section>
-                <h2 className="text-xl font-semibold">Analytics</h2>
-                <p>
-                    This website uses Google Analytics 4, a web analytics
-                    service provided by Google LLC, to analyze website usage and
-                    improve user experience.
-                </p>
-                <p>
-                    Google Analytics collects anonymous information such as page
-                    views, device type, and approximate geographic location.
-                </p>
-                <p>
-                    Analytics data is collected only after explicit user
-                    consent.
-                </p>
-                <p>
-                    You can opt out at any time by refusing analytics cookies.
-                </p>
-            </section>
         </main>
     );
 }

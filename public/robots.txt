@@ -1,5 +1,13 @@
-# https://www.robotstxt.org/robotstxt.html
+# Autorise tous les robots à accéder au site
 User-agent: *
-Disallow:
 
+# Bloque les pages sensibles ou non pertinentes
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+
+# Autorise tout le reste
+Allow: /
+
+# Indique l'emplacement du sitemap
 Sitemap: https://popcorn.lncl.fr/sitemap.xml
